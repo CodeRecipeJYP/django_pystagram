@@ -1,0 +1,16 @@
+<h1>hi</h1>
+<ul>
+
+    authen : {{ user.is_authenticated }}
+<br>
+    active : {{ user.is_active }}
+    {% if user.is_authenticated %}
+        <li><a href="#">{{ user.username }}</a></li>
+        <li><a href="/accounts/logout">logout</a></li>
+    {% else %}
+        <li><a href="/accounts/login">Log In</a></li>
+    {% endif %}
+</ul><!-- /.info -->
+<br>
+<br>
+<br>

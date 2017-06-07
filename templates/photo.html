@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<p>hello world</p>
+
+<p>{{photo.image_file.url}}</p>
+
+<p><img src="{{photo.image_file.url}}" /></p>
+{% endblock %}
